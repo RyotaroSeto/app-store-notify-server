@@ -5,10 +5,10 @@
 package apiconnect
 
 import (
+	api "app-store-notify-server/pkg/pb/api"
 	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
-	api "github.com/appstore-notify-sample/pkg/pb/api"
 	http "net/http"
 	strings "strings"
 )

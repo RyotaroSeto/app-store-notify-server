@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package api;
 
-option go_package = "github.com/appstore-notify-sample/pkg/pb/api";
+option go_package = "app-store-notify-server/pkg/pb/api";
 
 service NotifyService {
   rpc Notify(NotifyRequest) returns (NotifyResponse) {}
