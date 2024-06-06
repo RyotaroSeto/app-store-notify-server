@@ -2,9 +2,7 @@ services:
   buf:
     build:
       context: .
-      dockerfile: build/buf.Dockerfile
-      args:
-        - GO_VERSION=${GO_VERSION}
-    working_dir: /usr/src/appstore-notify-sample
+      dockerfile: build/Dockerfile
+    working_dir: /usr/src/app-store-notify-server
     volumes:
-      - ./:/usr/src/appstore-notify-sample
+      - ./:/usr/src/app-store-notify-server

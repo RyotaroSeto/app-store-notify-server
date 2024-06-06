@@ -1,8 +1,6 @@
-ARG GO_VERSION
+FROM golang:1.22.3
 
-FROM golang:${GO_VERSION}
-
-WORKDIR /usr/src/appstore-notify-sample
+WORKDIR /usr/src/app-store-notify-server
 
 COPY go.mod .
 COPY go.sum .
